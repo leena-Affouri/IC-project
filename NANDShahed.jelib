@@ -1,0 +1,55 @@
+# header information:
+HNAND|9.07
+
+# Views:
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D22.0
+
+# Cell nand;1{sch}
+Cnand;1{sch}||schematic|1693579520606|1693748412198|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-36|11||||
+NOff-Page|conn@1||-36|2||||
+NOff-Page|conn@2||16|15||||
+NGround|gnd@1||-10|-9||||
+NTransistor|nmos@1||-12|0|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2.0|ATTR_width(D5G1;X0.5;Y-1;)S10|SIM_spice_model(D5G1;)SNMOS
+NTransistor|nmos@3||-12|10|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2.0|ATTR_width(D5G1;X0.5;Y-1;)S10|SIM_spice_model(D5G1;)SNMOS
+NWire_Pin|pin@5||-10|18||||
+NWire_Pin|pin@7||-22|10||||
+NWire_Pin|pin@8||2|5||||
+NWire_Pin|pin@9||-22|5||||
+NWire_Pin|pin@10||-22|0||||
+NWire_Pin|pin@11||-11|22||||
+NWire_Pin|pin@12||-22|11||||
+NWire_Pin|pin@13||-22|2||||
+NWire_Pin|pin@14||-10|15||||
+Ngeneric:Invisible-Pin|pin@15||-55|21|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 5,va A 0 pwl 10n 0 20n 5 50n 5 60n 0 90n 0 100n 5 130n 5 140n 0 170n 0 180n 5,vb B 0 pwl 10n 0 20n 5 100n 5 110n 0,cload OUT 0 250fF,.measure tran tf trig v(out) val=4.5 fall=1 td=4ns trag v(out) val=0.5 fall=1,.measure tran tr trig v(out) val=0.5 rais=1 td=4ns trag v(out) val=4.5 rais=1,.tran 200n,".include C:\\Users\\ASUS\\Desktop\\Electric\\22nm-2.txt"]
+NTransistor|pmos@0||1|20|||XR|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S2.0|ATTR_width(D5G1;)S10|SIM_spice_model(D5G1;)SPMOS
+NTransistor|pmos@1||-21|20|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S2.0|ATTR_width(D5G1;X0.5;Y-1;)S10|SIM_spice_model(D5G1;)SPMOS
+NPower|pwr@0||-11|28||||
+Awire|net@8|||1800|pmos@1|s|-19|18|pin@5||-10|18
+Awire|net@9|||1800|pin@5||-10|18|pmos@0|s|-1|18
+Awire|net@11|||900|nmos@3|s|-10|8|nmos@1|d|-10|2
+Awire|net@14|||900|nmos@1|s|-10|-2|gnd@1||-10|-7
+Awire|net@16|||1800|pin@7||-22|10|nmos@3|g|-13|10
+Awire|net@17|||900|pmos@0|g|2|20|pin@8||2|5
+Awire|net@18|||0|pin@8||2|5|pin@9||-22|5
+Awire|net@20|||1800|pin@10||-22|0|nmos@1|g|-13|0
+Awire|net@21|||1800|pmos@1|d|-19|22|pin@11||-11|22
+Awire|net@22|||1800|pin@11||-11|22|pmos@0|d|-1|22
+Awire|net@23|||900|pwr@0||-11|28|pin@11||-11|22
+Awire|net@24|||900|pmos@1|g|-22|20|pin@12||-22|11
+Awire|net@25|||900|pin@12||-22|11|pin@7||-22|10
+Awire|net@26|||1800|conn@0|y|-34|11|pin@12||-22|11
+Awire|net@28|||900|pin@9||-22|5|pin@13||-22|2
+Awire|net@29|||900|pin@13||-22|2|pin@10||-22|0
+Awire|net@30|||1800|conn@1|y|-34|2|pin@13||-22|2
+Awire|net@31|||900|pin@5||-10|18|pin@14||-10|15
+Awire|net@32|||900|pin@14||-10|15|nmos@3|d|-10|12
+Awire|net@33|||1800|pin@14||-10|15|conn@2|a|14|15
+EA||D5G2;|conn@0|a|U
+EB||D5G2;|conn@1|a|U
+EOUT||D5G2;|conn@2|a|U
+X

@@ -1,0 +1,93 @@
+# header information:
+HNew-Rej|9.07
+
+# Views:
+Vicon|ic
+Vschematic|sch
+
+# External Libraries:
+
+LInverter_Gate|Inverter_Gate
+
+LNANDgate|NANDgate
+
+# Technologies:
+Tbicmos|ScaleFORbicmos()D2.0
+Tcmos|ScaleFORcmos()D22.0
+Tmocmos|ScaleFORmocmos()D22.0
+
+# Cell new;1{ic}
+Cnew;1{ic}||artwork|1694154667958|1694154785556|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NBox|art@4||0|1|6|6||
+NArrow|art@5||0|1|2|2||
+Nschematic:Bus_Pin|pin@0||-5|3||||
+Nschematic:Wire_Pin|pin@1||-3|3||||
+Nschematic:Bus_Pin|pin@2||-5|-1||||
+Nschematic:Wire_Pin|pin@3||-3|-1||||
+Nschematic:Bus_Pin|pin@4||5|1|||X|
+Nschematic:Wire_Pin|pin@5||3|1|||X|
+Aschematic:wire|net@0|||0|pin@1||-3|3|pin@0||-5|3
+Aschematic:wire|net@1|||0|pin@3||-3|-1|pin@2||-5|-1
+Aschematic:wire|net@2|||1800|pin@5||3|1|pin@4||5|1
+Eclk||D5G2;|pin@0||U
+Ein||D5G2;|pin@2||U
+Eout||D5G2;|pin@4||U
+X
+
+# Cell new;1{sch}
+Cnew;1{sch}||schematic|1694154296237|1694156110829|
+IInverter_Gate:Inv;1{ic}|Inv@0||-54|-1|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-69|26||||
+NOff-Page|conn@1||-70|13||||
+NOff-Page|conn@2||23|24||||
+INANDgate:nandgate;2{ic}|nandgate@0||-33|24|||D5G4;
+INANDgate:nandgate;2{ic}|nandgate@1||-33|0|||D5G4;
+INANDgate:nandgate;2{ic}|nandgate@2||-8|23|||D5G4;
+INANDgate:nandgate;2{ic}|nandgate@3||-4|1|||D5G4;
+NWire_Pin|pin@0||-47.5|24||||
+NWire_Pin|pin@1||-59|26||||
+NWire_Pin|pin@2||-47.5|13||||
+NWire_Pin|pin@3||-47.5|2||||
+NWire_Pin|pin@4||12.5|11.5||||
+NWire_Pin|pin@5||12.5|2||||
+NWire_Pin|pin@6||12|18||||
+NWire_Pin|pin@7||12|24||||
+NWire_Pin|pin@8||-11|18||||
+NWire_Pin|pin@9||-11|3||||
+NWire_Pin|pin@10||-16|11.5||||
+NWire_Pin|pin@11||-16|23||||
+Awire|net@0|||900|pin@0||-47.5|24|pin@2||-47.5|13
+Awire|net@1|||1800|conn@1|y|-68|13|pin@2||-47.5|13
+Awire|net@2|||1800|nandgate@1|OUT|-25|1|nandgate@3|B|-9|1
+Awire|net@3|||900|pin@8||-11|18|pin@9||-11|3
+Awire|net@4|||0|nandgate@3|A|-9|3|pin@9||-11|3
+Awire|net@5|||2700|pin@10||-16|11.5|pin@11||-16|23
+Awire|net@6|||0|pin@4||12.5|11.5|pin@10||-16|11.5
+Awire|net@7|||0|pin@6||12|18|pin@8||-11|18
+Awire|net@8|||1800|pin@0||-47.5|24|nandgate@0|B|-38|24
+Awire|net@9|||1800|pin@1||-59|26|nandgate@0|A|-38|26
+Awire|net@10|||0|pin@7||12|24|nandgate@2|OUT|0|24
+Awire|net@11|||0|pin@5||12.5|2|nandgate@3|OUT|4|2
+Awire|net@12|||1800|conn@0|y|-67|26|pin@1||-59|26
+Awire|net@13|||1800|pin@11||-16|23|nandgate@2|B|-13|23
+Awire|net@14|||1800|nandgate@0|OUT|-25|25|nandgate@2|A|-13|25
+Awire|net@15|||2700|Inv@0|A|-59|0|pin@1||-59|26
+Awire|net@16|||900|pin@2||-47.5|13|pin@3||-47.5|2
+Awire|net@18|||900|pin@4||12.5|11.5|pin@5||12.5|2
+Awire|net@19|||1800|pin@7||12|24|conn@2|a|21|24
+Awire|net@20|||2700|pin@6||12|18|pin@7||12|24
+Awire|net@21|||1800|pin@3||-47.5|2|nandgate@1|A|-38|2
+Awire|net@22|||1800|Inv@0|Y|-47|0|nandgate@1|B|-38|0
+Eclk||D5G2;|conn@1|a|U
+Ein||D5G2;|conn@0|a|U
+Eout||D5G2;|conn@2|y|U
+X
+
+# Cell nn;1{sch}
+Cnn;1{sch}||schematic|1694156093627|1694156105530|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Inew;1{ic}|new@0||-31|5|||D5G4;
+Ngeneric:Invisible-Pin|pin@0||4|3|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 1.3,* Define A and B waveforms for all four combinations,vin_in in 0 pulse(0 1.3 0 1n 1n 20n 44n),vin_clk clk 0 pulse(0 1.3 0 1n 1n 10n 22n),cload out 0 25fF,.tran 50n,".include C:\\Users\\ASUS\\Desktop\\Electric\\22nm-2.txt"]
+X

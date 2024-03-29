@@ -1,0 +1,29 @@
+# header information:
+Hmaryam-inverto|9.07
+
+# Views:
+Vlayout|lay
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D22.0
+
+# Cell inv_lay;1{lay}
+Cinv_lay;1{lay}||mocmos|1694125332845|1694125332858||DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1694181574167|IO_dummy_object()Sinv_lay;1{lay}|IO_true_library()SFULLADD
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Ngeneric:Invisible-Pin|pin@0||0|0||||
+Ngeneric:Universal-Pin|pin@1||-51|-7|-1|-1||
+Ngeneric:Universal-Pin|pin@2||-3|-8|-1|-1||
+Einput||D5G2;|pin@1||U
+Eoutput||D5G2;|pin@2||U
+X
+
+# Cell invertor;1{sch}
+Cinvertor;1{sch}||schematic|1694125332846|1694125332858||IO_dummy_object()Sinvertor;1{sch}|IO_true_library()SFULLADD
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Ngeneric:Invisible-Pin|pin@0||0|0||||
+Ngeneric:Universal-Pin|pin@1||-10|10|-1|-1||
+Ngeneric:Universal-Pin|pin@2||-29|10|-1|-1||
+EA||D5G2;|pin@2||U
+EY||D5G2;|pin@1||U
+X

@@ -1,0 +1,28 @@
+* First line is ignored
+
+*** SUBCIRCUIT Nand__Nand FROM CELL Nand:Nand{sch}
+.SUBCKT Nand__Nand A B gnd Out vdd
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 Out A net@66 gnd NMOS L=0.044U W=0.22U
+Mnmos@1 net@66 B gnd gnd NMOS L=0.044U W=0.22U
+Mpmos@0 vdd A Out vdd PMOS L=0.044U W=0.22U
+Mpmos@1 vdd B Out vdd PMOS L=0.044U W=0.22U
+.ENDS Nand__Nand
+
+.global gnd vdd
+
+*** SUBCIRCUIT FA FROM CELL FA{sch}
+.SUBCKT FA A B CIN COUT SUM
+** GLOBAL gnd
+** GLOBAL vdd
+XNand@0 A net@10 gnd net@15 vdd Nand__Nand
+XNand@1 net@15 net@17 gnd net@26 vdd Nand__Nand
+XNand@2 Nand@2_A net@10 gnd COUT vdd Nand__Nand
+XNand@3 net@40 net@120 gnd SUM vdd Nand__Nand
+XNand@4 net@26 CIN gnd net@36 vdd Nand__Nand
+XNand@5 net@36 CIN gnd net@120 vdd Nand__Nand
+XNand@6 A B gnd net@10 vdd Nand__Nand
+XNand@7 net@10 B gnd net@17 vdd Nand__Nand
+XNand@8 net@26 net@36 gnd net@40 vdd Nand__Nand
+.ENDS FA

@@ -1,0 +1,39 @@
+# header information:
+HNANDgate|9.07
+
+# Views:
+Vicon|ic
+Vlayout|lay
+
+# Technologies:
+Tbicmos|ScaleFORbicmos()D2.0
+Tcmos|ScaleFORcmos()D22.0
+Tmocmos|ScaleFORmocmos()D22.0
+
+# Cell nandgate;2{ic}
+Cnandgate;2{ic}||artwork|1694122470939|1694122470940|E|IO_dummy_object()Snandgate;2{ic}|IO_true_library()SfullAdder
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Ngeneric:Invisible-Pin|pin@0||0|0||||
+Ngeneric:Universal-Pin|pin@1||-5|0|-1|-1||
+Ngeneric:Universal-Pin|pin@2||-5|2|-1|-1||
+Ngeneric:Universal-Pin|pin@3||8|1|-1|-1||
+EA||D5G2;|pin@2||U
+EB||D5G2;|pin@1||U
+EOUT||D5G2;|pin@3||U
+X
+
+# Cell nandgate;1{lay}
+Cnandgate;1{lay}||mocmos|1694122470937|1694122470940||IO_dummy_object()Snandgate;1{lay}|IO_true_library()SfullAdder
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Ngeneric:Invisible-Pin|pin@0||0|0||||
+Ngeneric:Universal-Pin|pin@1||0|0|-1|-1||
+Ngeneric:Universal-Pin|pin@2||0|0|-1|-1||
+Ngeneric:Universal-Pin|pin@3||0|0|-1|-1||
+Ngeneric:Universal-Pin|pin@4||37|4|-1|-1||
+Ngeneric:Universal-Pin|pin@5||-33|-2|-1|-1||
+EA||D5G2;|pin@5||U
+EB||D5G2;|pin@4||U
+EOUT||D5G2;|pin@1||U
+Egnd||D5G2;|pin@2||U
+Evdd||D5G2;|pin@3||U
+X

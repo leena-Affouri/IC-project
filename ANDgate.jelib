@@ -1,0 +1,102 @@
+# header information:
+HANDgate|9.07
+
+# Views:
+Vicon|ic
+Vlayout|lay
+Vschematic|sch
+
+# External Libraries:
+
+LInverter_Gate|Inverter_Gate
+
+LNANDgate|NANDgate
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D22.0
+
+# Cell NewAnd;1{sch}
+CNewAnd;1{sch}||schematic|1694087918150|1694088648804|
+Iand;1{ic}|and@0||-82|30|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Ngeneric:Invisible-Pin|pin@0||-47|16|||||SIM_spice_card(D5G3;)S[vdd vdd 0 DC 1.3,* Define A and B waveforms for all four combinations,vin_A A 0 pulse(0 1.3 0 1n 1n 20n 44n),vin_B B 0 pulse(0 1.3 0 1n 1n 10n 22n),cload OUT 0 25fF,.tran 50n,".include C:\\Users\\ASUS\\Desktop\\Electric\\22nm-2.txt"]
+X
+
+# Cell and;1{ic}
+Cand;1{ic}||artwork|1694086231445|1694086332718|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Polygon|art@2||-3|-13|6|6|||trace()V[3/-3,-3/-3,-3/3,3/3]
+NCircle|art@3||0|-13|6|6|RRR||ART_degrees()F[0.0,3.1415927]
+Nschematic:Bus_Pin|pin@0||-9|-12||||
+Nschematic:Wire_Pin|pin@1||-6|-12||||
+Nschematic:Bus_Pin|pin@2||-9|-14||||
+Nschematic:Wire_Pin|pin@3||-6|-14||||
+Nschematic:Bus_Pin|pin@4||7|-13||||
+Nschematic:Wire_Pin|pin@5||3|-13||||
+Aschematic:wire|net@0|||0|pin@1||-6|-12|pin@0||-9|-12
+Aschematic:wire|net@1|||0|pin@3||-6|-14|pin@2||-9|-14
+Aschematic:wire|net@2|||1800|pin@5||3|-13|pin@4||7|-13
+EA||D5G2;|pin@0||U
+EB||D5G2;|pin@2||U
+EY||D5G2;|pin@4||U
+X
+
+# Cell and;1{lay}
+Cand;1{lay}||mocmos|1694086356938|1694122597278||DRC_last_good_drc_area_date()G1694088081340|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1694088081340
+IInverter_Gate:Inv;1{lay}|Inv@0||34|1|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Polysilicon-1-Con|contact@0||68|2||||
+NMetal-1-Polysilicon-1-Con|contact@1||-120|3||||
+NMetal-1-Polysilicon-1-Con|contact@2||4|62||||
+INANDgate:nandgate;1{lay}|nandgate@0||-43|5|||D5G4;
+NMetal-1-Pin|pin@2||4|9||||
+NMetal-1-Pin|pin@4||-44|74||||
+NMetal-1-Pin|pin@5||25|74||||
+NMetal-1-Pin|pin@6||-43|-43||||
+NMetal-1-Pin|pin@7||27|-43||||
+NMetal-1-Pin|pin@8||68|1.5||||
+NMetal-1-Pin|pin@9||-13.25|1||||
+NMetal-1-Pin|pin@10||-13.25|5||||
+NMetal-1-Pin|pin@11||-44|39.5||||
+NMetal-1-Pin|pin@12||-43|39.5||||
+AMetal-1|net@0||1|S900|pin@10||-13.25|5|pin@9||-13.25|1
+AMetal-1|net@3|||S1800|nandgate@0|B|-6|9|pin@2||4|9
+AMetal-1|net@7||1|S0|pin@12||-43|39.5|pin@11||-44|39.5
+AMetal-1|net@8||1|S1800|pin@4||-44|74|pin@5||25|74
+AMetal-1|net@9||1|S900|pin@5||25|74|Inv@0|vdd|25|32
+AMetal-1|net@10||1|S900|nandgate@0|gnd|-43|5|pin@6||-43|-43
+AMetal-1|net@11||1|S1800|pin@6||-43|-43|pin@7||27|-43
+AMetal-1|net@12||1|S2700|pin@7||27|-43|Inv@0|gnd|27|-28
+AMetal-1|net@13||1|S900|contact@0||68|2|pin@8||68|1.5
+AMetal-1|net@14||1|S1800|Inv@0|Y|49|1.5|pin@8||68|1.5
+AMetal-1|net@15|||S0|nandgate@0|A|-76|3|contact@1||-120|3
+AMetal-1|net@16|||S2700|pin@2||4|9|contact@2||4|62
+AMetal-1|net@17||1|S1800|nandgate@0|OUT|-43|5|pin@10||-13.25|5
+AMetal-1|net@18||1|S1800|pin@9||-13.25|1|Inv@0|A|16.5|1
+AMetal-1|net@19||1|S2700|nandgate@0|vdd|-43|5|pin@12||-43|39.5
+AMetal-1|net@20||1|S2700|pin@11||-44|39.5|pin@4||-44|74
+EA||D5G2;|contact@1||U
+EB||D5G2;|contact@2||U
+EY||D5G2;|contact@0||U
+X
+
+# Cell and;1{sch}
+Cand;1{sch}||schematic|1694085977449|1694088908707|
+IInverter_Gate:Inv;1{ic}|Inv@1||-11|13|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-70|17||||
+NOff-Page|conn@1||-70|12||||
+NOff-Page|conn@2||10|14||||
+INANDgate:nandgate;2{ic}|nandgate@1||-49|13|||D5G4;
+NWire_Pin|pin@10||-54|17||||
+NWire_Pin|pin@11||-54|12||||
+Awire|net@17|||1800|conn@0|y|-68|17|pin@10||-54|17
+Awire|net@18|||2700|nandgate@1|A|-54|15|pin@10||-54|17
+Awire|net@19|||1800|conn@1|y|-68|12|pin@11||-54|12
+Awire|net@20|||900|nandgate@1|B|-54|13|pin@11||-54|12
+Awire|net@21|||1800|nandgate@1|OUT|-41|14|Inv@1|A|-16|14
+Awire|net@22|||1800|Inv@1|Y|-4|14|conn@2|a|8|14
+EA||D5G2;|conn@0|a|U
+EB||D5G2;|conn@1|a|U
+EY||D5G2;|conn@2|y|U
+X
